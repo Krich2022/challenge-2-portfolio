@@ -1,0 +1,52 @@
+body {
+   font-family: "Barlow Condensed";
+}
+
+h1 {
+   font-size: 32px;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   margin: auto;
+   max-width: 1000px;
+   position: sticky;
+}
+nav {
+   display: flex;
+   gap: 15px;
+   margin: 10px;
+}
+
+.title-card {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   text-align: center;
+   background-image: url(../images/image-from-rawpixel-id-441166-jpeg.jpg);
+   background-size: cover;
+   width: 100%;
+   height: 0;
+   padding-bottom: 481px;
+}
+
+.title-card div {
+   position: absolute;
+   color: white;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 32px;
+}
+
+.title-card::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.4);
+}
