@@ -2,18 +2,26 @@ body {
    font-family: "Barlow Condensed";
 }
 
+main {
+   max-width: 1000px;
+   margin: auto;
+   padding: 24px;
+}
 h2 {
    font-size: 28px;
+   text-align: center;
+   width: 200px;
 }
 
 header {
    display: flex;
    justify-content: space-between;
-   margin: 24px;
+   margin: auto;
    max-width: 1000px;
    position: sticky;
    font-size: 32px;
    align-items: center;
+   padding: 24px;
 }
 nav {
    display: flex;
@@ -31,7 +39,7 @@ nav {
    background-size: cover;
    width: 100%;
    height: 0;
-   padding-bottom: 721px;
+   padding-bottom: 689px;
 }
 
 .title-card div {
@@ -51,4 +59,94 @@ nav {
    width: 100%;
    height: 100%;
    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.github::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-size: contain;
+   margin-right: 5px;
+   background: url("../images/764894_github_media_social_square_icon.svg") no-repeat;
+}
+
+.email::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-size: contain;
+   margin-right: 5px;
+   background: url("../images/4745721_bubble_connection_email_envelope_letter_icon.svg") no-repeat;
+}
+
+.insta::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-size: contain;
+   margin-right: 5px;
+   background: url("../images/5282544_camera_instagram_social\ media_social\ network_instagram\ logo_icon.svg") no-repeat;
+}
+
+.link::before {
+   content: "";
+   display: inline-block;
+   width: 16px;
+   height: 16px;
+   background-size: contain;
+   margin-right: 5px;
+   background: url(../images/5282542_linkedin_network_social\ network_linkedin\ logo_icon.svg) no-repeat;
+}
+
+.email,
+.github,
+.insta,
+.link {
+   font-size: 20px;
+}
+
+.flex {
+   display: flex;
+}
+
+.project-container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.project-items {
+   width: 400px;
+   height: 400px;
+   background-color: grey;
+   flex: 0 0 calc(50% - 10px);
+   margin: auto;
+   padding: 10px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   text-align: center;
+   position: relative;
+}
+
+.bakston {
+   position: relative;
+}
+
+.bakston-image {
+   width: 100%;
+   filter: blur(3px);
+}
+
+.project-link {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   font-size: 60px;
+   transform: translate(-50%, -50%);
+}
+
+#projects {
+   margin: 24px auto;
 }
