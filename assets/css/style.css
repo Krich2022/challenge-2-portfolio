@@ -10,7 +10,15 @@ main {
 h2 {
    font-size: 28px;
    text-align: center;
-   width: 200px;
+   width: 25vw;
+}
+
+.heading {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   border-right: 2px solid black;
+   margin-right: 10px;
 }
 
 header {
@@ -115,38 +123,73 @@ nav {
 .project-container {
    display: flex;
    flex-wrap: wrap;
+   gap: 20px;
 }
 
 .project-items {
    width: 400px;
-   height: 400px;
-   background-color: grey;
-   flex: 0 0 calc(50% - 10px);
-   margin: auto;
-   padding: 10px;
+   height: 200px;
+   width: calc(50% - 10px);
+   margin: 10px 0px;
    box-sizing: border-box;
-   border: 1px solid #ccc;
+   border: 2px solid black;
    text-align: center;
    position: relative;
 }
 
 .bakston {
    position: relative;
+   border: 2px black solid;
+   display: inline-block;
+}
+
+.baskton::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   pointer-events: none;
+}
+
+a:hover {
+   color: #008080;
+   transition: 0.4s;
 }
 
 .bakston-image {
    width: 100%;
    filter: blur(3px);
+   position: relative;
+   max-width: 782px;
+   display: block;
 }
 
 .project-link {
    position: absolute;
    top: 50%;
    left: 50%;
-   font-size: 60px;
+   font-size: 4vw;
    transform: translate(-50%, -50%);
 }
 
 #projects {
    margin: 24px auto;
+}
+
+.contact-link {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+   .project-items {
+      width: 100%;
+   }
+   h2 {
+      width: 30vw;
+   }
 }
